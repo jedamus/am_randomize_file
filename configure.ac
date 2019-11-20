@@ -1,6 +1,8 @@
 AC_INIT([am_randomize_file], [1.1], [ljedamus@web.de])
 AM_INIT_AUTOMAKE([-Wall])
-AM_PROG_CC
+AC_PROG_CC
+AC_PROG_AR
+AC_PROG_RANLIB
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([
   Makefile
