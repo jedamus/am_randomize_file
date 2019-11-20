@@ -4,6 +4,7 @@ AC_PROG_CC
 AM_PROG_AR
 AC_PROG_RANLIB
 AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_LIBOBJ_DIR([lib])
 AC_CONFIG_FILES([
   Makefile
   lib/Makefile
