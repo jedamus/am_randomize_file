@@ -1,6 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
+/* modifiziert Donnerstag, 21. November 2019 07:20 von Leander Jedamus */
 /* modifiziert Mittwoch, 20. November 2019 13:18 von Leander Jedamus */
 /* modifiziert Dienstag, 12. November 2019 11:52 von Leander Jedamus */
 /* modifiziert Donnerstag, 07. November 2019 11:17 von Leander Jedamus */
@@ -9,12 +10,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <config.h>
 #include "knoten.h"
 #include "sqrt.h"
 
 #define MAXZEILE 32768
 
 void usage(char * prog_name) {
+  puts("This is " PACKAGE_STRING ".");
   printf("%s <quelldatei> <zieldatei> <randomseed>\n",prog_name);
   exit(-1);
 };/* usage */
