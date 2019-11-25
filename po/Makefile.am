@@ -1,1 +1,1 @@
-DIST_SOURCES = de.po en.po
+DIST_SOURCES = de.po en.po de/LC_MESSAGES/@PACKAGE@.mo de/LC_MESSAGES/@PACKAGE@.mo
