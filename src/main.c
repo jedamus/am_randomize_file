@@ -1,7 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
-/* modifiziert Montag, 25. November 2019 07:41 von Leander Jedamus */
+/* modifiziert Montag, 25. November 2019 13:34 von Leander Jedamus */
 /* modifiziert Donnerstag, 21. November 2019 07:20 von Leander Jedamus */
 /* modifiziert Mittwoch, 20. November 2019 13:18 von Leander Jedamus */
 /* modifiziert Dienstag, 12. November 2019 11:52 von Leander Jedamus */
@@ -19,7 +19,7 @@
 #define MAXZEILE 32768
 
 void usage(char * prog_name) {
-  printf(_("This is %s.\n"),PACKAGE_STRING);
+  printf(_("This is %s in %s.\n"),PACKAGE_STRING,LOCALDIR);
   printf("%s <quelldatei> <zieldatei> <randomseed>\n",prog_name);
   exit(-1);
 };/* usage */
@@ -36,8 +36,8 @@ int main(int argc, char * argv[]) {
   int zeilen = 0;
 
 setlocale(LC_ALL, "");
-/* setlocale(LC_CTYPE, "de_DE");  */
-/* setlocale(LC_MESSAGES, "de_DE"); */
+/* setlocale(LC_CTYPE, "");  */
+/* setlocale(LC_MESSAGES, ""); */
 
   bindtextdomain(PACKAGE, "./po");
   textdomain(PACKAGE);
