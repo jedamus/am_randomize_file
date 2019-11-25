@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: am_randomize_file 1.1\n"
 "Report-Msgid-Bugs-To: Leander Jedamus <ljedamus@web.de>\n"
-"POT-Creation-Date: 2019-11-25 07:08+0100\n"
-"PO-Revision-Date: 2019-11-25 07:08+0100\n"
+"POT-Creation-Date: 2019-11-25 13:35+0100\n"
+"PO-Revision-Date: 2019-11-25 13:35+0100\n"
 "Last-Translator: Leander Jedamus <ljedamus@web.de>\n"
 "Language-Team: Leander Jedamus <ljedamus@web.de>\n"
 "Language: de en\n"
@@ -19,5 +19,5 @@ msgstr ""
 
 #: src/main.c:22
 #, c-format
-msgid "This is %s.\n"
+msgid "This is %s in %s.\n"
 msgstr ""
