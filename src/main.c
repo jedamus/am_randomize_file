@@ -1,7 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
-/* modifiziert Montag, 25. November 2019 07:24 von Leander Jedamus */
+/* modifiziert Montag, 25. November 2019 07:41 von Leander Jedamus */
 /* modifiziert Donnerstag, 21. November 2019 07:20 von Leander Jedamus */
 /* modifiziert Mittwoch, 20. November 2019 13:18 von Leander Jedamus */
 /* modifiziert Dienstag, 12. November 2019 11:52 von Leander Jedamus */
@@ -39,7 +39,7 @@ setlocale(LC_ALL, "");
 /* setlocale(LC_CTYPE, "de_DE");  */
 /* setlocale(LC_MESSAGES, "de_DE"); */
 
-  bindtextdomain(PACKAGE, "./translate");
+  bindtextdomain(PACKAGE, "./po");
   textdomain(PACKAGE);
 
   if (argc < 4) {
