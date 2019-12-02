@@ -1,5 +1,0 @@
-PACKAGE = @PACKAGE@
-VERSION = @VERSION@
-
-all:
-	@echo "done."
