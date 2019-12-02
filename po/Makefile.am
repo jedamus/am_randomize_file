@@ -7,3 +7,9 @@ EXTRA_DIST += de/LC_MESSAGES/@PACKAGE@.mo
 
 EXTRA_DIST += @PACKAGE@_en.po @PACKAGE@_en.po.old
 EXTRA_DIST += en/LC_MESSAGES/@PACKAGE@.mo
+
+localedir = $(datadir)/locale
+
+install-data-am:
+		    $(MKDIR_P) $(localedir)
+		    cp -Rp de en $(localedir)
