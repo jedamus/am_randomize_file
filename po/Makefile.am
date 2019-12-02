@@ -10,6 +10,8 @@ EXTRA_DIST += en/LC_MESSAGES/@PACKAGE@.mo
 
 localedir = $(datadir)/locale
 
-install-data-am:
-		    $(MKDIR_P) $(localedir)
-		    cp -Rp de en $(localedir)
+install-data-local:
+		    $(MKDIR_P) $(localedir)/de/LC_MESSAGES
+		    $(INSTALL) -m 644 de/LC_MESSAGES/@PACKAGE@.mo $(localedir)/de/LC_MESSAGES
+		    $(MKDIR_P) $(localedir)/en/LC_MESSAGES
+		    $(INSTALL) -m 644 en/LC_MESSAGES/@PACKAGE@.mo $(localedir)/en/LC_MESSAGES
