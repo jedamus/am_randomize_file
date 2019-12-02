@@ -1,6 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
+/* modifiziert Montag, 02. Dezember 2019 05:33 von Leander Jedamus */
 /* modifiziert Montag, 25. November 2019 13:39 von Leander Jedamus */
 /* modifiziert Donnerstag, 21. November 2019 07:20 von Leander Jedamus */
 /* modifiziert Mittwoch, 20. November 2019 13:18 von Leander Jedamus */
@@ -35,11 +36,11 @@ int main(int argc, char * argv[]) {
   int randomnumber = 0;
   int zeilen = 0;
 
-setlocale(LC_ALL, "");
-/* setlocale(LC_CTYPE, "");  */
-/* setlocale(LC_MESSAGES, ""); */
+  setlocale(LC_ALL, "");
+  /* setlocale(LC_CTYPE, "");  */
+  /* setlocale(LC_MESSAGES, ""); */
 
-  bindtextdomain(PACKAGE, "./po");
+  bindtextdomain(PACKAGE, LOCALEDIR);
   textdomain(PACKAGE);
 
   if (argc < 4) {
