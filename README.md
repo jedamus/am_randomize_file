@@ -1,4 +1,4 @@
-# am_randomize_file
+# am randomize file
 
 ## install
 
