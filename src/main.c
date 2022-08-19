@@ -15,7 +15,7 @@
 #include <config.h>
 #include "knoten.h"
 #include "sqrt.h"
-#include "gettext.h"
+#include "mygettext.h"
 
 #define MAXZEILE 32768
 
