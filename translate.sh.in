@@ -5,7 +5,7 @@
 # modifiziert Dienstag, 26. November 2019 16:05 von Leander Jedamus
 # modifiziert Montag, 25. November 2019 11:58 von Leander Jedamus
 
-translate.pl -read_config --dir=po --project=@PACKAGE@ --version=@VERSION@
+translate.pl --read_config --dir=po --project=@PACKAGE@ --version=@VERSION@
 
 # vim:ai sw=2
 
