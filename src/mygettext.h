@@ -1,6 +1,7 @@
 /* -*- C -*- */
 /* gettext.h */
 /* erzeugt Mittwoch, 17. August 2022 15:59 (C) 2022 von Leander Jedamus */
+/* modifiziert Donnerstag, 15. August 2024 13:31 von Leander Jedamus */
 /* modifiziert Mittwoch, 17. August 2022 17:31 von Leander Jedamus */
 
 #ifndef MYGETTEXT_H
@@ -9,7 +10,7 @@
 #include <libintl.h>
 #include "gettext.h"
 
-#define _(string) gettext (string)
+/* #define _(string) gettext (string) */
 
 #endif /* GETTEXT_H */
 

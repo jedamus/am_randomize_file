@@ -1,4 +1,4 @@
-LDADD = -lintl -lknoten -lsqrt -lm
+LDADD = -lknoten -lsqrt -lm
 AM_LDFLAGS = -L../lib
 AM_CPPFLAGS = -I../lib -I../../../lib
 
