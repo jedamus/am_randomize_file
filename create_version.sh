@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 # erzeugt Freitag, 16. Februar 2024 19:38 (C) 2024 von Leander Jedamus
+# modifiziert Donnerstag, 15. August 2024 16:53 von Leander Jedamus
 # modifiziert Montag, 12. August 2024 16:25 von Leander Jedamus
 # modifiziert Dienstag, 06. August 2024 14:50 von Leander Jedamus
 # modifiziert Freitag, 23. Februar 2024 13:35 von Leander Jedamus
@@ -11,7 +12,12 @@
 # set -x
 
 filename=$1
-base_filename=$(basename $filename)
+if [ -z $2 ]; then
+  base_filename=$(basename $filename)
+else
+  base_filename=$2
+fi
+
 version_filename=version.txt
 author_filename=author.txt
 
@@ -37,7 +43,7 @@ fi
 
 cat <<EOF > $filename
 /* -*- C -*- */
-/* $filename */
+/* $base_filename */
 /* erzeugt $DATETIME (C) $YEAR von $author */
 /* modifiziert $DATETIME von $author */
 
