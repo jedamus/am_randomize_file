@@ -1,7 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
-/* modifiziert Donnerstag, 15. August 2024 13:41 von Leander Jedamus */
+/* modifiziert Donnerstag, 15. August 2024 14:48 von Leander Jedamus */
 /* modifiziert Montag, 02. Dezember 2019 05:33 von Leander Jedamus */
 /* modifiziert Montag, 25. November 2019 13:39 von Leander Jedamus */
 /* modifiziert Donnerstag, 21. November 2019 07:20 von Leander Jedamus */
@@ -14,9 +14,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <config.h>
+#include <project.h>
 #include "knoten.h"
 #include "sqrt.h"
-#include "mygettext.h"
+#include "gettext.h"
 
 #define MAXZEILE 32768
 
