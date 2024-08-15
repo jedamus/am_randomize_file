@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # erzeugt Mittwoch, 20. November 2019 14:15 (C) 2019 von Leander Jedamus
-# modifiziert Donnerstag, 15. August 2024 13:15 von Leander Jedamus
+# modifiziert Donnerstag, 15. August 2024 13:34 von Leander Jedamus
 # modifiziert Montag, 02. Dezember 2019 02:53 von Leander Jedamus
 # modifiziert Montag, 25. November 2019 10:09 von Leander Jedamus
 # modifiziert Donnerstag, 21. November 2019 07:10 von Leander Jedamus
@@ -10,8 +10,8 @@
 set -e
 
 sh ./create_configure_ac.sh
-sh ./create_project.sh project.h
-sh ./create_version.sh version.h
+sh ./create_project.sh src/project.h
+sh ./create_version.sh src/version.h
 sh ./create_translate_sh.sh
 
 autoreconf --install
