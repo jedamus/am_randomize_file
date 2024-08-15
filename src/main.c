@@ -1,6 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
+/* modifiziert Donnerstag, 15. August 2024 13:41 von Leander Jedamus */
 /* modifiziert Montag, 02. Dezember 2019 05:33 von Leander Jedamus */
 /* modifiziert Montag, 25. November 2019 13:39 von Leander Jedamus */
 /* modifiziert Donnerstag, 21. November 2019 07:20 von Leander Jedamus */
@@ -22,7 +23,7 @@
 void usage(char * prog_name) {
   printf(_("This is %s in %s.\n"),PACKAGE_STRING,LOCALEDIR);
   printf("%s <quelldatei> <zieldatei> <randomseed>\n",prog_name);
-  exit(-1);
+  exit(EXIT_SUCCESS);
 };/* usage */
 
 int main(int argc, char * argv[]) {
@@ -90,6 +91,8 @@ int main(int argc, char * argv[]) {
     free(lptr2);
   };
   fclose(textfile);
+
+  exit(EXIT_SUCCESS);
 };/* main */
 
 /* vim:set cindent ai sw=2: */
