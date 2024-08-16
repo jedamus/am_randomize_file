@@ -1,6 +1,7 @@
 /* -*- C -*- */
 /* main.c */
 /* erzeugt Montag, 28. Oktober 2019 13:27 (C) 2019 von Leander Jedamus */
+/* modifiziert Freitag, 16. August 2024 09:10 von Leander Jedamus */
 /* modifiziert Donnerstag, 15. August 2024 14:48 von Leander Jedamus */
 /* modifiziert Montag, 02. Dezember 2019 05:33 von Leander Jedamus */
 /* modifiziert Montag, 25. November 2019 13:39 von Leander Jedamus */
@@ -44,6 +45,8 @@ int main(int argc, char * argv[]) {
 
   bindtextdomain(PACKAGE, LOCALEDIR);
   textdomain(PACKAGE);
+
+  printf(_("%s V%s (C) %s by %s <%s>\n"), PACKAGE, VERSION, YEARS, AUTHOR, EMAIL);
 
   if (argc < 4) {
     usage(argv[0]);
