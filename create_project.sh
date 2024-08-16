@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 # erzeugt Freitag, 16. Februar 2024 19:38 (C) 2024 von Leander Jedamus
+# modifiziert Freitag, 16. August 2024 09:02 von Leander Jedamus
 # modifiziert Donnerstag, 15. August 2024 16:53 von Leander Jedamus
 # modifiziert Montag, 12. August 2024 16:24 von Leander Jedamus
 # modifiziert Mittwoch, 07. August 2024 14:51 von Leander Jedamus
@@ -11,6 +12,11 @@
 # modifiziert Freitag, 16. Februar 2024 20:24 von Leander Jedamus
 
 # set -x
+
+if [ -z $1 ]; then
+  echo "error: missing parameter to create header file"
+  exit 1
+fi
 
 filename=$1
 if [ -z $2 ]; then
